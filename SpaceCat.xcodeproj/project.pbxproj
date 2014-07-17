@@ -133,6 +133,122 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2060F1171978373400595F49 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B328BAEB1923CA7B00E473DE /* THTitleScene.h */,
+				B328BAEC1923CA7B00E473DE /* THTitleScene.m */,
+				B328BAEE1923CCE700E473DE /* THGamePlayScene.h */,
+				B328BAEF1923CCE700E473DE /* THGamePlayScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		2060F1181978374200595F49 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				2060F11D197837E000595F49 /* GameOver */,
+				2060F11C1978379D00595F49 /* World */,
+				2060F11B1978378E00595F49 /* Player */,
+				2060F11A1978375F00595F49 /* Enemies */,
+				2060F1191978375300595F49 /* HUD */,
+			);
+			name = Nodes;
+			sourceTree = "<group>";
+		};
+		2060F1191978375300595F49 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC085C1937D6E3008AF051 /* THHudNode.h */,
+				B3DC085D1937D6E3008AF051 /* THHudNode.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		2060F11A1978375F00595F49 /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+				B35E85B71927CF7E00B4E19F /* THSpaceDogNode.h */,
+				B35E85B81927CF7E00B4E19F /* THSpaceDogNode.m */,
+			);
+			name = Enemies;
+			sourceTree = "<group>";
+		};
+		2060F11B1978378E00595F49 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				B328BAF8192414DC00E473DE /* THSpaceCatNode.h */,
+				B328BAF9192414DC00E473DE /* THSpaceCatNode.m */,
+				B328BAF51923ECE600E473DE /* THMachineNode.h */,
+				B328BAF61923ECE600E473DE /* THMachineNode.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		2060F11C1978379D00595F49 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				B328BAFB19241CA900E473DE /* THProjectileNode.h */,
+				B328BAFC19241CA900E473DE /* THProjectileNode.m */,
+				B34F4FA41927DD0D000EF094 /* THGroundNode.h */,
+				B34F4FA51927DD0D000EF094 /* THGroundNode.m */,
+			);
+			name = World;
+			sourceTree = "<group>";
+		};
+		2060F11D197837E000595F49 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC085F1937EF80008AF051 /* THGameOverNode.h */,
+				B3DC08601937EF80008AF051 /* THGameOverNode.m */,
+			);
+			name = GameOver;
+			sourceTree = "<group>";
+		};
+		2060F11E197837FC00595F49 /* ParticleSystems */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC08581937CD2A008AF051 /* Explosion.sks */,
+				B3DC08591937CD2A008AF051 /* spark.png */,
+			);
+			name = ParticleSystems;
+			sourceTree = "<group>";
+		};
+		2060F11F1978383500595F49 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3D5913B192176DE00198E96 /* THViewController.h */,
+				B3D5913C192176DE00198E96 /* THViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		2060F1201978383F00595F49 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B3D59138192176DE00198E96 /* Main.storyboard */,
+			);
+			name = storyboards;
+			sourceTree = "<group>";
+		};
+		2060F1211978387300595F49 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B302843E19254798003BB6E0 /* THUtil.h */,
+				B302843F19254798003BB6E0 /* THUtil.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		2060F1221978388400595F49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3D59143192176DE00198E96 /* Images.xcassets */,
+				B328BAF31923D91B00E473DE /* Sprites.atlas */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B3B4EC0E1934FAB5001A77D2 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,31 +298,16 @@
 		B3D5912C192176DE00198E96 /* SpaceCat */ = {
 			isa = PBXGroup;
 			children = (
+				B3D59135192176DE00198E96 /* THAppDelegate.h */,
+				B3D59136192176DE00198E96 /* THAppDelegate.m */,
+				2060F1201978383F00595F49 /* storyboards */,
+				2060F11F1978383500595F49 /* controllers */,
+				2060F11E197837FC00595F49 /* ParticleSystems */,
+				2060F1181978374200595F49 /* Nodes */,
+				2060F1171978373400595F49 /* Scenes */,
 				B3B4EC0E1934FAB5001A77D2 /* Sounds */,
-				B328BAEB1923CA7B00E473DE /* THTitleScene.h */,
-				B328BAEC1923CA7B00E473DE /* THTitleScene.m */,
-				B328BAEE1923CCE700E473DE /* THGamePlayScene.h */,
-				B328BAEF1923CCE700E473DE /* THGamePlayScene.m */,
-				B3DC085C1937D6E3008AF051 /* THHudNode.h */,
-				B3DC085D1937D6E3008AF051 /* THHudNode.m */,
-				B328BAFB19241CA900E473DE /* THProjectileNode.h */,
-				B328BAFC19241CA900E473DE /* THProjectileNode.m */,
-				B35E85B71927CF7E00B4E19F /* THSpaceDogNode.h */,
-				B35E85B81927CF7E00B4E19F /* THSpaceDogNode.m */,
-				B328BAF8192414DC00E473DE /* THSpaceCatNode.h */,
-				B328BAF9192414DC00E473DE /* THSpaceCatNode.m */,
-				B34F4FA41927DD0D000EF094 /* THGroundNode.h */,
-				B34F4FA51927DD0D000EF094 /* THGroundNode.m */,
-				B328BAF51923ECE600E473DE /* THMachineNode.h */,
-				B328BAF61923ECE600E473DE /* THMachineNode.m */,
-				B3DC085F1937EF80008AF051 /* THGameOverNode.h */,
-				B3DC08601937EF80008AF051 /* THGameOverNode.m */,
-				B302843E19254798003BB6E0 /* THUtil.h */,
-				B302843F19254798003BB6E0 /* THUtil.m */,
-				B3DC08581937CD2A008AF051 /* Explosion.sks */,
-				B3DC08591937CD2A008AF051 /* spark.png */,
-				B3D59143192176DE00198E96 /* Images.xcassets */,
-				B328BAF31923D91B00E473DE /* Sprites.atlas */,
+				2060F1221978388400595F49 /* Resources */,
+				2060F1211978387300595F49 /* Util */,
 				B3D5912D192176DE00198E96 /* Supporting Files */,
 			);
 			path = SpaceCat;
@@ -215,11 +316,6 @@
 		B3D5912D192176DE00198E96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3D59135192176DE00198E96 /* THAppDelegate.h */,
-				B3D59136192176DE00198E96 /* THAppDelegate.m */,
-				B3D59138192176DE00198E96 /* Main.storyboard */,
-				B3D5913B192176DE00198E96 /* THViewController.h */,
-				B3D5913C192176DE00198E96 /* THViewController.m */,
 				B3D5912E192176DE00198E96 /* SpaceCat-Info.plist */,
 				B3D5912F192176DE00198E96 /* InfoPlist.strings */,
 				B3D59132192176DE00198E96 /* main.m */,
